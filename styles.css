@@ -1,0 +1,222 @@
+/*
+ * File: styles.css
+ * Project: campus-store-status-site
+ * File Created: Monday, 9th February 2026 10:04:35 PM
+ * Author: Zabdiel Addo
+ * Email: zabdiel.addo@ashesi.edu.gh
+ * Version: 1.0.0
+ * Brief: <<brief>>
+ * -----
+ * Last Modified: Monday, 9th February 2026 10:04:56 PM
+ * Modified By: Zabdiel Addo
+ * -----
+ * Copyright ©2026 Zabdiel Addo
+ */
+
+:root {
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e5e7eb;
+  --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+
+  --green: #16a34a;
+  --red: #ef4444;
+  --yellow: #f59e0b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 22px 16px 28px;
+}
+
+.header h1 {
+  font-size: 22px;
+  margin: 6px 0 2px;
+}
+
+.header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  border-radius: 16px;
+  padding: 16px;
+  margin: 14px 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.sub {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 99px;
+}
+
+.dot.green {
+  background: var(--green);
+}
+
+.dot.red {
+  background: var(--red);
+}
+
+.dot.yellow {
+  background: var(--yellow);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.chev {
+  color: #94a3b8;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.footer {
+  margin-top: 16px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+/* Store page */
+.back {
+  display: inline-block;
+  margin: 4px 0 14px;
+  color: #334155;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.center {
+  text-align: center;
+}
+
+.bigStatus {
+  width: 86px;
+  height: 86px;
+  border-radius: 999px;
+  margin: 10px auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.bigStatus.red {
+  background: var(--red);
+}
+
+.bigStatus.green {
+  background: var(--green);
+}
+
+.bigStatus.yellow {
+  background: var(--yellow);
+}
+
+.sectionTitle {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  font-weight: 800;
+  color: #334155;
+  margin: 4px 0 10px;
+}
+
+.activity {
+  display: flex;
+  gap: 12px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12px;
+}
+
+.line {
+  flex: 1;
+  width: 2px;
+  background: #e2e8f0;
+}
+
+.event {
+  flex: 1;
+}
+
+.eventItem {
+  padding: 6px 0;
+}
+
+.eventItem .when {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: #f1f5f9;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #334155;
+  margin-top: 8px;
+}
